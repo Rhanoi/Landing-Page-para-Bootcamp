@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cinza-DNC: #303030;
+    --azul-DNC: #1E5091;
+    --destaque: #1F1F1F;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+}
+h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    color: fff;
+}
+h2{
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    color: fff;
+}
+li{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+#subtitulo{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+
+}
+.destaque{
+    background-color: var(--destaque);
+    font-size: 40px;
+    font-weight: 500;    
+}
+.destaqueDNC{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#menuNavegacao{
+    ul a li{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
