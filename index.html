@@ -9,6 +9,7 @@
 
 </head>
 <body>
+<!--Menu de navegação-->
     <nav id="menuNavegacao">
         <ul>
             <a href="#">
@@ -21,8 +22,82 @@
                 <li>Requisitos para Participar</li>
             </a>
         </ul>
-        <a href=""><button>login</button></a>
+        <a href="#"><button id="botaoLogin">Login</button></a>
     </nav>
+    <main>
+<!--Banner principal-->
+        <section id="bannerPrincipal">
+            <h1>BOOTCAMP DNC</h1>
+            <p id="subtitulo">Esse será um evento exclusivo para todos os alunos<br>
+                da <span class="destaqueDNC">DNC</span>, que querem <span class="destaquePequeno">acelerar a carreira</span> com uma<br>
+                semana intensiva de conteúdo de mercado entre<br>
+                <span class="destaque">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </p>
+        </section>
+
+<!--Seção Formulário-->
+        <section id="formulario">
+            <!--Utilizo o metodo GET para que os dados apareçam na url
+                PS: Apenas para estudos
+            -->
+            <form action="#" method="get">
+                <label>Nome</label><br>
+                <input type="text" name="nome" required placeholder="Insira seu nome aqui"><br>
+                <label>Sobrenome</label><br>
+                <input type="text" name="sobrenome" required placeholder="Insira seu sobrenome aqui"><br>
+                <br>
+                <div>
+                    <label class="tituloCheck">Área de interesse</label><br>
+                    <span>
+                        <label class="check"><input type="checkbox" name="carreira" value="Front-End" > Front-End</label>
+                        <label class="check"><input type="checkbox" name="carreira" value="Back-End" > Back-End</label>
+                        <label class="check"><input type="checkbox" name="carreira" value="Dados" > Banco de Dados</label>
+                    </span>
+                </div><br>
+                <label>Email</label><br>
+                <input type="email" name="email" required placeholder="Insira seu e-mail aqui"><br>
+                <label>Telefone</label><br>
+                <input type="tel" name="telefone" required placeholder="(99) 9999-9999"><br>
+                <label>Insira uma frase criativa aqui:</label><br>
+                <input type="text" name="textoCriativo" placeholder="Qual frase criativa você gostaria de falar? &#58; &#41;"><br>
+        
+                <button type="submit">Login</button>
+
+
+                
+            </form>
+        </section>
+    </main>
+
+<!--Seção Footer-->
+    <footer>
+        <div id="links">
+            <div class="card">
+                <h2 class="destaque">Escolas</h2>
+                <a href="#">Formação em Tecnologia</a>
+                <a href="#">Formação em Marketing</a>
+                <a href="#">Formação em Dados</a>
+                <a href="#">Formação em Projetos</a>
+                <a href="#">Formação em Produto</a>
+            </div>
+            <div class="card">
+                <h2 class="destaque">Sobre a DNC</h2>
+                <a href="#">História</a>
+                <a href="#">Missão e valores</a>
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Conteúdo gratuito</a>
+            </div>
+            <div id="endereco"><p>© 2022 DTC Treinamentos & Consultoria<br>
+                LTDA | CNPJ: 27.995.577/0001-37 | R.<br>
+                Justino Cobra, 61 – Vila Ema | São José dos<br>
+                Campos – SP | CEP 12243-030</p>
+            </div>
+        </div>
+        <div>
+            <p>Termos de Uso | Política de Privacidade</p>
+        </div>
+
+    </footer>
 
     
 </body>

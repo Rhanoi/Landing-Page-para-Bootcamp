@@ -4,37 +4,48 @@
     --cinza-DNC: #303030;
     --azul-DNC: #1E5091;
     --destaque: #1F1F1F;
+    --azul-DNC-claro:#0C70F2;
+    
 }
-
+/*configuração padrão*/
 *{
     font-family: "Inter", sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 h1{
     font-size: 80px;
     font-weight: 800;
     text-align: center;
-    color: fff;
+    color: #fff;
 }
 h2{
     font-size: 25px;
     font-weight: 800;
-    text-align: center;
-    color: fff;
+    color: #fff;
 }
 li{
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+    list-style-type: none;
 }
+a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+/*Estilos específicos*/
 #subtitulo{
     font-size: 40px;
     font-weight: 400;
     text-align: center;
     color: #fff;
-
 }
 .destaque{
     background-color: var(--destaque);
+    color:#fff;
     font-size: 40px;
     font-weight: 500;    
 }
@@ -43,9 +54,145 @@ li{
     font-weight: 700;
 }
 
+#botaoLogin{
+    background-color: var(--azul-DNC-claro);
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding: 7px 13px;
+}
+
+/*Layout de cada seção*/
 #menuNavegacao{
-    ul a li{
-        font-size: 25px;
-        font-weight: 600;
+    background-color: var(--cinza-DNC);
+    color: white;
+    
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 30px 100px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        
+        a li{
+            font-size: 25px;
+            font-weight: 600;
+        }
     }
 }
+
+#bannerPrincipal{
+    background:  linear-gradient(180deg, #1E5091 80%, #303030 100%);
+    padding: 100px 0px;
+    display: grid;
+    gap: 26px;
+}
+
+#formulario{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinza-DNC);
+    color: #fff;
+
+    label{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    input{
+        width: 630px;
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 16px;
+        margin-bottom: 20px;
+        
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+        label{
+            font-size: 25px;
+            font-weight: 600;
+            
+            input{
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+
+    button{
+        width: 100%;
+        border-radius: 10px;
+        padding: 16px;
+        font-size: 32px;
+        font-weight: 600;
+        border: none;
+        color: #fff;
+        background-color: var(--azul-DNC-claro);
+        cursor: pointer;
+    }
+    button:hover{
+        box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+    }
+}
+
+footer{
+    background-color: var(--azul-DNC-claro);
+    padding: 46px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    #links{
+        display: flex;
+        justify-content: space-between;
+    }
+    #endereco{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+        h2{
+            display:inline;
+            font-size: 25px;
+            font-weight: 800;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        a{
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+    p{
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+
+    }
+    
+}
+
